@@ -53,13 +53,19 @@ transition: height width 1s ease-in-out;
 
 }
 
+@font-face {
+  font-family: "SimSun";
+  src: url("simsunb.woff");
+}
+
+
 body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
 
   font-size: 14px;
-  font-family: "SimSun-ExtB", courier;
+  font-family: "SimSun", "Courier New";
   overflow: scroll;
 }
 
@@ -70,7 +76,6 @@ a {
 }
 
 .header-txt {
-  font-weight: bold;
 }
 
 .header {
@@ -149,7 +154,7 @@ a.info {
 }
 
 .description {
-  font-family: "SimSun-ExtB";
+  font-family: "SimSun";
   font-weight: regular;
   padding-top: 30px;
   line-height: 20px;
