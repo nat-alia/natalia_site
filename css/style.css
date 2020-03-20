@@ -8,6 +8,13 @@ img {
 }
 
 
+@font-face {
+  font-family: "simsunb";
+  src: url("font/simsunb.woff") format("woff");
+  font-weight: regular;
+}
+
+
 /* cursor*/
 
 .cursor {
@@ -25,7 +32,7 @@ cursor: none;
 pointer-events: none;
 z-index: 500;
 
-transition: height width 1s ease-in-out;
+transition: height width color s1s ease-in-out;
 
 
 }
@@ -53,10 +60,6 @@ transition: height width 1s ease-in-out;
 
 }
 
-@font-face {
-  font-family: "SimSun";
-  src: url("simsunb.woff");
-}
 
 
 body {
@@ -65,7 +68,7 @@ body {
   margin: 0;
 
   font-size: 14px;
-  font-family: "SimSun", "Courier New";
+  font-family: "simsunb", "Courier New";
   overflow: scroll;
 }
 
@@ -154,7 +157,7 @@ a.info {
 }
 
 .description {
-  font-family: "SimSun";
+  font-family: "simsunb", "Courier New";
   font-weight: regular;
   padding-top: 30px;
   line-height: 20px;
@@ -180,7 +183,7 @@ margin-bottom: 100px;
 }
 
 #gos-des {
-  grid-column: 1/ span 6;
+  grid-column: 1/ span 7;
   grid-row: 7 / span 2;
 }
 
@@ -330,7 +333,6 @@ visibility: visible;
 
 .inner-des {
   font-size: 14px;
-  font-weight: bold;
   margin-top: -30px;
 
 }
