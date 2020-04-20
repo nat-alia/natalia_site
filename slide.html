@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Natalia Oledzka</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131729864-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131729864-1');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="cursor.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="flickity-fade.js"></script>
+    <script src="carousel.js"></script>
+
+
+
+    <style>
+
+      .body {
+        background-color: white;
+      }
+      .cell-ms {
+        background-image:url("img/Museo Stibbert/ms3b.png");
+        background-size: cover;
+      }
+
+      .cell-gos {
+        background-image:url("img/Grain of Sand/gosall.png");
+        background-size: cover;
+      }
+
+      .cell-mm {
+        background-image:url("img/Mish Mash/mishmashscanblack.png");
+        background-size: cover;
+      }
+
+      .cell-tip {
+        background-image:url("img/Type Imaginary/tip1.png");
+        background-size: cover;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(9, 10vw [col-start]);
+        grid-template-rows: repeat(1, 10vh [row-start]);
+        width: 100%;
+      }
+      .header {
+        z-index: 100;
+        mix-blend-mode: difference;
+
+      }
+
+
+
+      .header a {
+        color: white;
+        mix-blend-mode: difference;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+      <div class="grid">
+
+        <div class="grid-header header">
+              <a class="name header-txt" href="index.html">Natalia Oledzka</a>
+              <a class="info header-txt" href="info.html">Information</a>
+              <a class="update header-txt">Updated 04.16.2020</a>
+        </div>
+
+        <div class="color"></div>
+        <div class="cursor"></div>
+
+</div>
+
+<div class="main-carousel" data-flickity='{ "wrapAround": true, "autoPlay": 3000, "pauseAutoPlayOnHover": false, "draggable": false}'>
+  <div class="carousel-cell cell-gos" >
+  </div>
+
+  <div class="carousel-cell cell-tip">
+  </div>
+
+  <div class="carousel-cell cell-ms">
+  </div>
+  <div class="carousel-cell cell-mm">
+  </div>
+</div>
+
+  </body>
+</html>
