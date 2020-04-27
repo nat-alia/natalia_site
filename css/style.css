@@ -22,8 +22,6 @@ html {
 
 .mobile p {
   max-width: 60vw;
-  margin: auto;
-  transform: translate(-50%, -50%);
 }
 
 
@@ -412,29 +410,18 @@ visibility: visible;
 }
 
 
+@media screen and (min-device-width : 0px) and (max-device-width: 960px) {
+  .cursor {
+    display: none;
+  }
 
-@media screen and (max-width: 700px) {
+  .mobile {
+    display: inline-block;
+    font-size: 50px;
+    padding: 10px;
+  }
 
-
-
-          .inner-des {
-            max-width: 100%;
-          }
-
-          #gos-des {
-            grid-column: 1/ span 10;
-            grid-row: 6 / span 2;
-        }
-
-        .cursor {
-          display: none;
-        }
-
-        .mobile {
-          display: inline-block;
-        }
-
-        .grid {
-          display: none;
-        }
+  .grid {
+    display: none;
+  }
 }
